@@ -335,7 +335,7 @@ func loadConfig() (*config, error) {
 		numNets := 0
 		if cfg.Bitcoin.MainNet {
 			numNets++
-			activeNetParams = bitcoinTestNetParams
+			activeNetParams = bitcoinMainNetParams
 		}
 		if cfg.Bitcoin.TestNet3 {
 			numNets++
